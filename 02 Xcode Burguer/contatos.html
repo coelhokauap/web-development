@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contato e pedidos | Xcode Burguer</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -13,22 +13,26 @@
     -->
     <form action="#" method="post">
       <label for="cor">Cor:</label>
-      <input type="color" name="" id="cor" />
-      <textarea name="txa_mensagem" id=""></textarea>
-      <select name="sel_estado" id="">
+      <input type="color" name="cor" id="cor" />
+      <label for="txa_mensagem">Mensagem:</label>
+      <textarea name="mensagem" id="txa_mensagem"></textarea>
+      <label for="sel_estado">Estado:</label>
+      <select name="estado" id="sel_estado">
         <option value="">Selecionar</option>
         <optgroup label="Região Sul">
           <option value="RS">Rio Grande do Sul</option>
           <option value="SC">Santa Catarina</option>
-          <option value="PR">Parana</option>
+          <option value="PR">Paraná</option>
         </optgroup>
 
-        <input type="radio" name="time" id="" />Grêmio
-        <input type="radio" name="time" id="" />Inter
       </select>
+      <label for="time_gremio">Grêmio</label>
+      <input type="radio" name="time" id="time_gremio" value="gremio" />
+      <label for="time_inter">Inter</label>
+      <input type="radio" name="time" id="time_inter" value="inter" />
     </form>
 
-    <form action="./envia.php" method="post">
+    <form action="#" method="post">
       <label for="txtusuario">Usuário:</label>
       <input
         type="text"
@@ -54,16 +58,16 @@
     <form action="#" method="post">
       <ul>
         <li type="none">
-          <label for="txtnome">Nome:</label>
+          <label for="user_name">Nome:</label>
           <input type="text" name="nome" id="user_name" />
         </li>
         <li type="none">
-          <label for="useremail">E-Mail:</label>
+          <label for="user_email">E-mail:</label>
           <input type="email" name="email" id="user_email" />
         </li>
         <li type="none">
-          <label for="usertel">Telefone:</label>
-          <input type="tel" name="email" id="user_tel" />
+          <label for="user_tel">Telefone:</label>
+          <input type="tel" name="telefone" id="user_tel" />
         </li>
         <h2>Pedido</h2>
         <ul>
@@ -71,14 +75,14 @@
             <label for="request_1"
               ><img class="fotos" src="./img/hamburguer_1.png" alt=""
             /></label>
-            <input type="checkbox" name="" id="request_1" />
+            <input type="checkbox" name="pedido_1" value="hamburguer_1" id="request_1" />
             <label for="amount_1">Quantidade:</label>
             <input type="number" name="amount_1" id="amount_1" />
             <br />
             <label for="steak_1"> <- Mal Passado</label>
-            <input type="range" name="" id="steak_1" />
+            <input type="range" name="ponto_1" id="steak_1" />
             <label for="steak_1">Bem Passado -></label>
-            <select name="Pão" id="type">
+            <select name="pao_1" id="type_1">
               <option value="">- Pão -</option>
               <option value="Brioche">Brioche</option>
               <option value="Australiano">Australiano</option>
@@ -88,14 +92,14 @@
             <label for="request_2"
               ><img class="fotos" src="./img/hamburguer_2.png" alt=""
             /></label>
-            <input type="checkbox" name="" id="request_2" />
+            <input type="checkbox" name="pedido_2" value="hamburguer_2" id="request_2" />
             <label for="amount_2">Quantidade:</label>
             <input type="number" name="amount_2" id="amount_2" />
             <br />
             <label for="steak_2"> <- Mal Passado</label>
-            <input type="range" name="" id="steak_2" />
+            <input type="range" name="ponto_2" id="steak_2" />
             <label for="steak_2">Bem Passado -></label>
-            <select name="Pão" id="type">
+            <select name="pao_2" id="type_2">
               <option value="">- Pão -</option>
               <option value="Brioche">Brioche</option>
               <option value="Australiano">Australiano</option>
@@ -105,14 +109,14 @@
             <label for="request_3"
               ><img class="fotos" src="./img/hamburguer_3.png" alt=""
             /></label>
-            <input type="checkbox" name="" id="request_3" />
+            <input type="checkbox" name="pedido_3" value="hamburguer_3" id="request_3" />
             <label for="amount_3">Quantidade:</label>
             <input type="number" name="amount_3" id="amount_3" />
             <br />
             <label for="steak_3"> <- Mal Passado</label>
-            <input type="range" name="" id="steak_3" />
+            <input type="range" name="ponto_3" id="steak_3" />
             <label for="steak_3">Bem Passado -></label>
-            <select name="Pão" id="type">
+            <select name="pao_3" id="type_3">
               <option value="">- Pão -</option>
               <option value="Brioche">Brioche</option>
               <option value="Australiano">Australiano</option>
@@ -123,14 +127,14 @@
           <label for="request_4"
             ><img class="fotos" src="./img/hamburguer_4.png" alt=""
           /></label>
-          <input type="checkbox" name="" id="request_4" />
+          <input type="checkbox" name="pedido_4" value="hamburguer_4" id="request_4" />
           <label for="amount_4">Quantidade:</label>
           <input type="number" name="amount_4" id="amount_4" />
           <br />
           <label for="steak_4"> <- Mal Passado</label>
-          <input type="range" name="" id="steak_4" />
+          <input type="range" name="ponto_4" id="steak_4" />
           <label for="steak_4">Bem Passado -></label>
-          <select name="Pão" id="type">
+          <select name="pao_4" id="type_4">
             <option value="">- Pão -</option>
             <option value="Brioche">Brioche</option>
             <option value="Australiano">Australiano</option>
@@ -139,6 +143,5 @@
         <input type="submit" value="Enviar" />
       </ul>
     </form>
-    <script src="./script.js"></script>
   </body>
 </html>
