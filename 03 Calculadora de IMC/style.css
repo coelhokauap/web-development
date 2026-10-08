@@ -1,0 +1,63 @@
+@import url("../00/main.css");
+
+body {
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+h1:first-of-type {
+  margin: 0 0 28px;
+  font-size: 40px;
+  line-height: 1.08;
+}
+
+span {
+  color: var(--color-accent);
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  background: var(--glass-field);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(18px);
+  font: inherit;
+}
+
+#btn_calcula {
+  margin-top: 22px;
+  background: rgba(var(--color-accent-rgb), 0.82);
+  color: var(--color-surface);
+  cursor: pointer;
+}
+
+#btn_calcula:hover {
+  background: rgba(var(--color-accent-rgb), 0.92);
+}
+
+#titulo_imc {
+  margin: 32px 0 10px;
+  color: var(--color-muted);
+  font-size: 24px;
+}
+
+#titulo_classificacao {
+  min-height: 54px;
+  margin: 0;
+  padding: 14px 16px;
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(18px);
+  font-size: 24px;
+}

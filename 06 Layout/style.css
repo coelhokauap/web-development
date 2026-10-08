@@ -1,0 +1,25 @@
+@import url("../00/main.css");
+
+#caixa {
+  width: 40%;
+  height: 700px;
+  background-color: var(--color-page-start);
+  display: block;
+  float: left;
+}
+
+#caixa2 {
+  width: 60%;
+  height: 350px;
+  background-color: var(--color-page-end);
+  display: block;
+  float: left;
+}
+
+#caixa3 {
+  width: 60%;
+  height: 350px;
+  background-color: var(--color-accent);
+  display: block;
+  float: left;
+}
