@@ -236,7 +236,7 @@ const formas = {
         botoes += `<ellipse cx="${x}" cy="${132 + j * 24}" rx="${13 - j * 0.6}" ry="14" fill="${j % 2 ? tom(c, 0.85) : c}"/>`;
       }
 
-      return `<path d="M${x} 300 L ${x} 140" stroke="#5f9c6a" stroke-width="6" stroke-linecap="round"/>${botoes}`;
+      return `<path d="M${x} 300 L ${x} 140" stroke="#d8898d" stroke-width="6" stroke-linecap="round"/>${botoes}`;
     });
   },
 
@@ -270,18 +270,18 @@ function imagem_flor(produto, nome_cor) {
   let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
     <defs>
       <radialGradient id="fundo" cx="28%" cy="20%" r="92%">
-        <stop offset="0" stop-color="#ffffff"/>
-        <stop offset="52%" stop-color="#f6efe1"/>
-        <stop offset="100%" stop-color="#dcefd4"/>
+        <stop offset="0" stop-color="#fffdfd"/>
+        <stop offset="52%" stop-color="#fff4f3"/>
+        <stop offset="100%" stop-color="#f8dddd"/>
       </radialGradient>
     </defs>
 
     <rect width="500" height="500" fill="url(#fundo)"/>
     <circle cx="250" cy="212" r="158" fill="#ffffff" opacity="0.5"/>
 
-    <path d="M250 470 C 243 384 246 300 250 236" stroke="#5f9c6a" stroke-width="9" fill="none" stroke-linecap="round"/>
-    <path d="M247 392 C 198 382 172 348 170 312 C 214 314 242 348 247 392 Z" fill="#6ba676"/>
-    <path d="M253 352 C 302 342 328 308 330 272 C 286 274 258 308 253 352 Z" fill="#84bd8d"/>
+    <path d="M250 470 C 243 384 246 300 250 236" stroke="#d8898d" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M247 392 C 198 382 172 348 170 312 C 214 314 242 348 247 392 Z" fill="#efaead"/>
+    <path d="M253 352 C 302 342 328 308 330 272 C 286 274 258 308 253 352 Z" fill="#f3c1bf"/>
 
     ${formas[produto.forma](cores_hex[nome_cor])}
   </svg>`;
