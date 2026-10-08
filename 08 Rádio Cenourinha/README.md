@@ -35,5 +35,5 @@ Abra `index.html` em um navegador. Não é preciso instalar dependências nem in
 ## Arquivos
 
 - `index.html` — conteúdo e estrutura da rádio;
-- `style.css` — identidade visual e layout responsivo, com importação de `../00/main.css`;
+- `style.css` — identidade visual e layout responsivo, com importação de `../main.css`;
 - `script.js` — consulta à API, seleção de imagens, curiosidades, créditos e galeria da equipe.
