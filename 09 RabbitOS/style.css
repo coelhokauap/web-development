@@ -1,0 +1,208 @@
+@import url("../main.css");
+
+:root {
+  --bs-primary: var(--color-accent);
+  --bs-primary-rgb: var(--color-accent-rgb);
+  --brand-coral-deep: #d86f76;
+}
+
+body {
+  padding: 0;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 1100px;
+}
+.brand-os {
+  color: var(--color-accent);
+}
+.navbar-brand {
+  color: var(--color-text);
+  letter-spacing: -0.06em;
+}
+.navbar-brand:hover {
+  color: var(--color-text);
+}
+
+.hero {
+  background:
+    radial-gradient(
+      circle at 82% 20%,
+      rgba(240, 128, 128, 0.2),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      var(--color-page-start),
+      var(--color-page-middle) 55%,
+      var(--color-page-end)
+    );
+}
+
+.hero h1 {
+  letter-spacing: -0.06em;
+}
+.hero h1 span {
+  color: var(--color-accent);
+}
+.hero-copy {
+  max-width: 590px;
+  color: var(--color-muted);
+}
+.hero .badge {
+  color: var(--brand-coral-deep) !important;
+  letter-spacing: 0.08em;
+}
+
+.product-card {
+  max-width: 350px;
+  border-radius: 2rem;
+  background: var(--color-accent);
+  transform: rotate(2deg);
+}
+
+.device-frame {
+  position: relative;
+  padding-top: 14px;
+}
+.camera-eye {
+  position: absolute;
+  z-index: 1;
+  top: 4px;
+  right: 57px;
+  width: 9px;
+  height: 9px;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  background: #39363b;
+}
+.device-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 42px;
+  gap: 9px;
+}
+
+.device-screen {
+  display: flex;
+  min-height: 330px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: linear-gradient(155deg, #fff 0%, #fff6f4 55%, #f9dddd 100%);
+}
+
+.device-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-top: 20px;
+}
+.scroll-wheel {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 3px solid rgba(255, 255, 255, 0.88);
+  border-radius: 50%;
+  background: #f7e6e3;
+  box-shadow: inset 0 1px 3px rgba(29, 29, 31, 0.16);
+}
+.scroll-wheel i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-subtle);
+}
+.device-button {
+  width: 8px;
+  height: 34px;
+  border-radius: 5px;
+  background: #39363b;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.28);
+}
+
+.assistant-orb {
+  display: grid;
+  width: 70px;
+  height: 70px;
+  place-items: center;
+  align-self: center;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 12px 28px rgba(var(--color-accent-rgb), 0.3);
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.assistant-message {
+  background: rgba(255, 255, 255, 0.8);
+}
+.assistant-message small {
+  color: var(--brand-coral-deep) !important;
+  letter-spacing: 0.1em;
+}
+.voice-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+.section-kicker {
+  color: var(--brand-coral-deep);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+.features {
+  background: var(--color-surface-soft);
+}
+.feature-intro {
+  max-width: 320px;
+}
+.feature-card {
+  border-color: rgba(var(--color-accent-rgb), 0.2);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.78);
+}
+.feature-icon {
+  color: var(--color-accent);
+  font-size: 1.6rem;
+}
+.contact-panel {
+  border: 1px solid var(--glass-border);
+  background: var(--glass-surface);
+  box-shadow: var(--glass-shadow);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--color-accent);
+  --bs-btn-border-color: var(--color-accent);
+  --bs-btn-hover-bg: var(--brand-coral-deep);
+  --bs-btn-hover-border-color: var(--brand-coral-deep);
+}
+
+footer {
+  border-top: 1px solid rgba(var(--color-accent-rgb), 0.2);
+  color: var(--color-subtle);
+  font-size: 0.9rem;
+}
+footer a {
+  color: var(--brand-coral-deep);
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--color-text);
+}
+
+@media (max-width: 767.98px) {
+  .product-card {
+    max-width: 280px;
+  }
+  .device-screen {
+    min-height: 300px;
+  }
+}
