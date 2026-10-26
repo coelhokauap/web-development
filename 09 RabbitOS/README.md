@@ -1,53 +1,41 @@
-<<<<<<< Updated upstream
-# RabbitOS
+# RabbitOS e Rabbit R1
 
-A documentação do projeto e as instruções para executar as versões Bootstrap e Tailwind estão no [README da raiz](../README.md).
-=======
-# RabbitOS + Rabbit R1
+## Objetivo
 
-## Objetivo da atividade
+Esta atividade apresenta o mesmo site de produto em Bootstrap e Tailwind CSS para comparar a criação de layout, responsividade e componentes. **RabbitOS** é o software assistente; **Rabbit R1** é o dispositivo de hardware.
 
-Construir a mesma página de apresentação de produto com Bootstrap e Tailwind CSS para comparar como cada framework ajuda a criar layout, responsividade e elementos de interface.
+## Versões
 
-O site apresenta o **RabbitOS**, o software assistente, e o **Rabbit R1**, o dispositivo de hardware que o acompanha. As duas versões mantêm a mesma proposta, conteúdo e identidade visual, baseada nas variáveis de `main.css`.
-
-## Como as versões foram construídas
+Na estrutura atual da branch `main`, as versões ficam em `09 RabbitOS/bootstrap/` e `09 RabbitOS/tailwind/`.
 
 ### Bootstrap
 
-A versão Bootstrap está na branch `feat/bootstrap`, nos arquivos `09 RabbitOS/index.html` e `09 RabbitOS/style.css`. O HTML usa o Bootstrap 5.3.3 por CDN: a navbar responsiva, o grid (`row` e `col-*`), cards, botões e utilitários de espaçamento e alinhamento. O CSS importa `main.css` e personaliza cores e a ilustração do Rabbit R1.
+`09 RabbitOS/bootstrap/index.html` usa Bootstrap 5.3.3 por CDN: navbar responsiva, grid (`row` e `col-*`), cards, botões e utilitários de espaçamento. `09 RabbitOS/bootstrap/style.css` importa `main.css` da raiz do repositório e define estilos próprios da identidade visual e da ilustração do Rabbit R1.
 
 ### Tailwind CSS
 
-A versão Tailwind está na branch `feat/tailwind`, nos mesmos caminhos. O HTML carrega o Play CDN do Tailwind CSS 4 e usa classes utilitárias para definir layout, responsividade, tipografia, cores e espaçamentos. O `style.css` importa `main.css` e contém os estilos específicos da ilustração do Rabbit R1.
-
-O Play CDN facilita experimentar o Tailwind sem instalar ferramentas ou configurar uma etapa de compilação. A documentação oficial recomenda seu uso para desenvolvimento, não para produção: <https://tailwindcss.com/docs/installation/play-cdn>.
+`09 RabbitOS/tailwind/index.html` usa o Play CDN do Tailwind CSS 4 e classes utilitárias para layout, responsividade, tipografia, cores e espaçamento. `09 RabbitOS/tailwind/style.css` importa `main.css` e estiliza a ilustração do aparelho. O Play CDN é indicado para experimentação e desenvolvimento, não para produção. [Documentação oficial](https://tailwindcss.com/docs/installation/play-cdn).
 
 ## Como executar
 
-É necessário ter Git, Python 3 e conexão com a internet. Não é preciso instalar dependências do projeto; Bootstrap e Tailwind são carregados por CDN. `main.css` fica na raiz do repositório e é compartilhado pelas duas versões.
-
-### Executar a versão Bootstrap
-
-Na raiz do repositório:
+É necessário ter Python 3 e conexão com a internet para carregar os frameworks pelas CDNs. Na raiz do repositório, inicie um servidor estático:
 
 ```bash
-git switch feat/bootstrap
-cd "09 RabbitOS"
 python3 -m http.server 8000
 ```
 
-Abra <http://localhost:8000/> no navegador.
+Acesse:
 
-### Executar a versão Tailwind CSS
+- Seletor: <http://localhost:8000/09%20RabbitOS/>
+- Bootstrap: <http://localhost:8000/09%20RabbitOS/bootstrap/>
+- Tailwind CSS: <http://localhost:8000/09%20RabbitOS/tailwind/>
 
-Encerre o servidor anterior com `Ctrl+C`. Na raiz do repositório:
+Encerre com `Ctrl+C`.
 
-```bash
-git switch feat/tailwind
-cd "09 RabbitOS"
-python3 -m http.server 8000
-```
+## Análise crítica
 
-Abra <http://localhost:8000/> no navegador.
->>>>>>> Stashed changes
+O documento em Word está em [`09 RabbitOS/Analise critica Bootstrap e Tailwind.docx`](09%20RabbitOS/Analise%20critica%20Bootstrap%20e%20Tailwind.docx).
+
+## Branches
+
+As branches atualmente existentes são `feat/bootstrap` e `feat/tailwind`. O enunciado pede os nomes exatos `bootstrap` e `tailwind`; alinhe os nomes antes da entrega final.
