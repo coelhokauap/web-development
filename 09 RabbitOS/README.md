@@ -1,8 +1,8 @@
-# RabbitOS e Rabbit R1
+# RabbitOS
 
 ## Objetivo
 
-Esta atividade apresenta o mesmo site de produto em Bootstrap e Tailwind CSS para comparar a criação de layout, responsividade e componentes. **RabbitOS** é o software assistente; **Rabbit R1** é o dispositivo de hardware.
+Esta atividade apresenta o mesmo site de produto em Bootstrap e Tailwind CSS para comparar a criação de layout, responsividade e componentes.
 
 ## Versões
 
@@ -31,10 +31,6 @@ Acesse:
 - Tailwind CSS: <http://localhost:8000/09%20RabbitOS/tailwind/>
 
 Encerre com `Ctrl+C`.
-
-## Análise crítica
-
-O documento em Word está em [`09 RabbitOS/Analise critica Bootstrap e Tailwind.docx`](09%20RabbitOS/Analise%20critica%20Bootstrap%20e%20Tailwind.docx).
 
 ## Branches
 
